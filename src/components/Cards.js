@@ -30,7 +30,7 @@ function Cards() {
                     path='/services'/>
                      <CardItem 
                     src='images/img-9.jpg'
-                    text='Zvartnots.Built by the order of Catholicos Nerses the Builder from 643–652.'
+                    text='Zvartnots.Built by the order of Catholicos Nerses the Builder from 643-652.'
                     label='Temple'
                     path='/services'/>
                      <CardItem 
