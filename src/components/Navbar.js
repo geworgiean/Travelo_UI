@@ -7,7 +7,7 @@ import './Navbar.css'
 function Navbar() {
   const [click, setClick] = useState(false)
   const [button, setButton] = useState(true)
-  const handlClick = () => setClick(!click)
+  const handleClick = () => setClick(!click)
   const closmobileMenu = () => setClick(false)
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -28,6 +28,9 @@ function Navbar() {
                 <Link to="/" className='navbar-logo' onClick={closmobileMenu}>
                     ARMN
                 </Link>
+                <div className="menu-icon" onClick={handleClick}>
+                    <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
                         <Link to='/' className='nav-links' onClick={closmobileMenu}>
@@ -42,11 +45,6 @@ function Navbar() {
                     <li className='nav-item'>
                         <Link to='/Products' className='nav-links' onClick={closmobileMenu}>
                             Products
-                        </Link>
-                    </li>
-                    <li className='nav-links'>
-                        <Link to='/Singup' className='nav-links-mobile' onClick={closmobileMenu}>
-                            Sign Up
                         </Link>
                     </li>
                 </ul>

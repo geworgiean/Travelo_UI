@@ -62,7 +62,7 @@ function Footer() {
                     </Link>
                 </div>
                 <small class='website-rights'>
-                    Created by GEWORGIEAN 2022
+                    Created by ARMAN GEWORGIEAN 2022
                 </small>
             </div>    
     
